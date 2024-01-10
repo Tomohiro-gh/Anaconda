@@ -41,8 +41,7 @@ conda update --all
 conda init bash
 ```
 
-#### condaの削除
-https://cocolofun.co.jp/anaconda-uninstall/
+#### condaの削除 : https://cocolofun.co.jp/anaconda-uninstall/
 ```
 conda install anaconda-clean
 anaconda-clean --yes
@@ -54,6 +53,25 @@ cd /user/anaconda3
 rm -rf ~/anaconda3
 ```
 
+-----------------
+## velocytoのための環境構築 （遺伝研スパコン 24/1/10）
+velocyto installation guide ->   http://velocyto.org/velocyto.py/install/index.html
+```
+conda create -n velo python=3.9.16
+conda activate velo
+
+pip install pysam
+conda install numpy scipy cython numba matplotlib scikit-learn h5py click
+
+## install velocyto
+pip install velocyto
+## or
+pip install -U --no-deps velocyto  
+
+```
+Tips: 
+velocyto 0.17 is an alpha release and it is updated often. If you installed with pip make sure you run pip install -U --no-deps velocyto now and then.
+Install with conda -> This installation method is NOT currently available. Our plan is make it available upon the 1.0 release.
 
 -----------------
 ## scVeloのための環境構築
@@ -66,13 +84,3 @@ pip install python-igraph louvain
 conda install -c anaconda openpyxl
 ```
 
------------------
-## velocytoのための環境構築 （遺伝研スパコン 24/1/10）
-velocyto installation guide ->   http://velocyto.org/velocyto.py/install/index.html
-```
-conda create -n velo python=3.9.16
-conda activate velo
-
-conda install numpy scipy cython numba matplotlib scikit-learn h5py click
-pip install velocyto
-```
