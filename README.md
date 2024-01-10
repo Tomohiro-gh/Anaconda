@@ -41,6 +41,20 @@ conda update --all
 conda init bash
 ```
 
+#### condaの削除
+https://cocolofun.co.jp/anaconda-uninstall/
+```
+conda install anaconda-clean
+anaconda-clean --yes
+
+## or
+
+## anaconda3のディレクトリを全て削除する
+cd /user/anaconda3
+rm -rf ~/anaconda3
+```
+
+
 -----------------
 ## scVeloのための環境構築
 ```
@@ -56,8 +70,8 @@ conda install -c anaconda openpyxl
 ## velocytoのための環境構築 （遺伝研スパコン 24/1/10）
 velocyto installation guide ->   http://velocyto.org/velocyto.py/install/index.html
 ```
-conda create -n velocyto python=3.9.16
-conda activate Velocyto
+conda create -n velo python=3.9.16
+conda activate velo
 
 conda install numpy scipy cython numba matplotlib scikit-learn h5py click
 pip install velocyto
