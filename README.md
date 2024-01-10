@@ -6,6 +6,11 @@ condaに関する備忘録
 ```
 conda info --envs
 ```
+#### 環境の確認認できる
+```
+conda info -e　
+```
+
 #### 仮想環境の作成
 ```
 conda create -n env_name libraries
@@ -20,12 +25,18 @@ conda remove -n myenv --all
 conda config --show
 ```
 
-#### conda のアップデート
+#### conda本体のアップデート
 ```
 conda update -n base -c defaults conda
 ```
 
-#### 最初の設定
+#### condaのパッケージアップデート　（activate後）
+```
+conda update --all
+```
+
+
+#### anaconda3 install 後 最初の設定
 ```
 conda init bash
 ```
