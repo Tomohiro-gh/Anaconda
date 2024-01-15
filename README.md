@@ -71,7 +71,17 @@ pip install -U --no-deps velocyto
 ```
 Tips: 
 velocyto 0.17 is an alpha release and it is updated often. If you installed with pip make sure you run pip install -U --no-deps velocyto now and then.
+
 Install with conda -> This installation method is NOT currently available. Our plan is make it available upon the 1.0 release.
+
+インストールエラーに関する記述
+ from velocyto.commands.velocyto import cli
+
+https://github.com/velocyto-team/velocyto.py/issues/53
+
+https://github.com/velocyto-team/velocyto.py/issues/186
+
+
 
 -----------------
 ## scVeloのための環境構築
