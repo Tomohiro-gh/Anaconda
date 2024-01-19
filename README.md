@@ -82,7 +82,9 @@ https://github.com/velocyto-team/velocyto.py/issues/53
 https://github.com/velocyto-team/velocyto.py/issues/186
 
 (update 2024/1/19)
+
 python version 3.8.18
+
 velocyto :biocondaでインストール
 
 
