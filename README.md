@@ -8,6 +8,8 @@ conda install PacakgeName
 
 ## versionを指定する場合
 conda install PacakgeName=X.Y.Z
+## ex)
+conda install numpy=1.19
 ```
 
 #### 仮想環境一覧
