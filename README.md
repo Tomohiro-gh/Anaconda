@@ -2,38 +2,48 @@
 condaに関する備忘録
 
 
-#### 仮想環境一覧
+#### パッケージのインストール
+```sh
+conda install PacakgeName
+
+## versionを指定する場合
+conda install PacakgeName=X.Y.Z
 ```
+
+#### 仮想環境一覧
+```sh
 conda info --envs
 ```
 #### 環境の確認認できる
-```
+```sh
 conda info -e　
 ```
 
 #### 仮想環境の作成
-```
+```sh
 conda create -n env_name libraries
 ```
 #### 仮想環境の削除
-```
+```sh
 conda remove -n myenv --all
 ```
 
 #### プロキシ設定の確認
-```
+```sh
 conda config --show
 ```
 
 #### conda本体のアップデート
-```
+```sh
 conda update -n base -c defaults conda
 ```
 
 #### condaのパッケージアップデート　（activate後）
-```
+```sh
 conda update --all
 ```
+
+
 
 
 #### anaconda3 install 後 最初の設定
